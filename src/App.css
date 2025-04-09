@@ -1,1 +1,11 @@
-  
+body {
+  box-sizing: border-box;
+}
+
+.app-container {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin: 0 auto;
+}

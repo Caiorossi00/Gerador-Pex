@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { questionSteps } from "../../data/questions";
+import "../../styles/FormWizard.scss";
 
 export default function FormWizard() {
   const [currentStep, setCurrentStep] = useState(0);
