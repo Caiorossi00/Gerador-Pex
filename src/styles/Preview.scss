@@ -1,4 +1,60 @@
 .preview {
-  min-width: 500px;
-  max-width: 500px;
+  max-width: 400px;
+  padding: 2rem;
+  color: #000;
+  border: 1px solid black;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .preview-step {
+    margin-bottom: 2rem;
+    page-break-inside: avoid;
+    break-inside: avoid;
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin: 0.25rem 0;
+    }
+  }
+}
+
+// Estilos específicos para impressão
+@media print {
+  .preview {
+    color: #000;
+    background: white;
+
+    h2,
+    h3 {
+      color: #000;
+    }
+  }
+
+  // Esconde qualquer coisa fora da área da prévia (se quiser)
+  .no-print {
+    display: none !important;
+  }
+
+  .preview-step {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 2rem;
+  }
+
+  // Força quebra entre seções (se necessário)
+  .page-break {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  @page {
+    size: A4;
+    margin: 2cm;
+  }
 }

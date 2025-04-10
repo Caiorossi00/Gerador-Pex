@@ -29,4 +29,14 @@ export const questionSteps = [
       },
     ],
   },
+  {
+    id: 4,
+    title: "Das evidências",
+    questions: [
+      {
+        id: "4.1",
+        label: "Insira as evidências da conclusão do projeto",
+      },
+    ],
+  },
 ];

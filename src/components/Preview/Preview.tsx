@@ -32,7 +32,7 @@ export default function Preview({ steps, respostas }: PreviewProps) {
               <strong>
                 {q.id} {q.label}:
               </strong>{" "}
-              {respostas[q.id] || <em>(sem resposta)</em>}
+              {respostas[q.id] || <em>(Resposta pendente)</em>}
             </p>
           ))}
         </div>
