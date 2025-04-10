@@ -27,14 +27,19 @@ export default function Preview({ steps, respostas }: PreviewProps) {
             {step.id}. {step.title}
           </h3>
 
-          {step.questions.map((q) => (
-            <p key={q.id}>
-              <strong>
-                {q.id} {q.label}:
-              </strong>{" "}
-              {respostas[q.id] || <em>(Resposta pendente)</em>}
-            </p>
-          ))}
+          <div className="preview-questions">
+            {step.questions.map((q) => (
+              <p key={q.id}>
+                <strong className="question">
+                  {q.id} {q.label}
+                </strong>
+                <br />
+                <span className="answer">
+                  {respostas[q.id] || <em>(Resposta pendente)</em>}
+                </span>
+              </p>
+            ))}
+          </div>
         </div>
       ))}
     </div>
