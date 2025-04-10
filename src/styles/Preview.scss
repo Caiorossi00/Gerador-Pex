@@ -1,8 +1,8 @@
 .preview {
   max-width: 480px;
   padding: 2rem;
-  color: #000;
-  border: 1px solid black;
+  border: 1px solid #b1b1b1;
+  border-radius: 4px;
   max-height: 600px;
   overflow: auto;
   font-family: Arial, sans-serif;
@@ -50,7 +50,7 @@
     text-align: justify;
 
     em {
-      color: red;
+      color: #00b58f;
       font-style: normal;
     }
   }

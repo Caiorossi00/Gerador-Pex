@@ -16,12 +16,14 @@ type FormWizardProps = {
   steps: Step[];
   respostas: { [key: string]: string };
   setRespostas: React.Dispatch<React.SetStateAction<{ [key: string]: string }>>;
+  handleDownload: () => void;
 };
 
 export default function FormWizard({
   steps,
   respostas,
   setRespostas,
+  handleDownload,
 }: FormWizardProps) {
   const [currentStep, setCurrentStep] = useState(0);
   const step = steps[currentStep];
@@ -71,7 +73,7 @@ export default function FormWizard({
         {currentStep < steps.length - 1 ? (
           <button onClick={nextStep}>Avançar</button>
         ) : (
-          <button onClick={() => console.log("Respostas:", respostas)}>
+          <button className="download-button" onClick={handleDownload}>
             Finalizar
           </button>
         )}
