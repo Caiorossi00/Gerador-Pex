@@ -1,12 +1,29 @@
 import { useState } from "react";
-import { questionSteps } from "../../data/questions";
-import "../../styles/FormWizard.scss";
 
-export default function FormWizard() {
+type Question = {
+  id: string;
+  label: string;
+};
+
+type Step = {
+  id: string;
+  title: string;
+  questions: Question[];
+};
+
+type FormWizardProps = {
+  steps: Step[];
+  respostas: { [key: string]: string };
+  setRespostas: React.Dispatch<React.SetStateAction<{ [key: string]: string }>>;
+};
+
+export default function FormWizard({
+  steps,
+  respostas,
+  setRespostas,
+}: FormWizardProps) {
   const [currentStep, setCurrentStep] = useState(0);
-  const [respostas, setRespostas] = useState<{ [key: string]: string }>({});
-
-  const step = questionSteps[currentStep];
+  const step = steps[currentStep];
 
   const handleChange = (campo: string, valor: string) => {
     setRespostas((prev) => ({
@@ -16,7 +33,7 @@ export default function FormWizard() {
   };
 
   const nextStep = () => {
-    if (currentStep < questionSteps.length - 1) {
+    if (currentStep < steps.length - 1) {
       setCurrentStep((prev) => prev + 1);
     }
   };
@@ -29,7 +46,9 @@ export default function FormWizard() {
 
   return (
     <div className="form-wizard">
-      <h2 className="step-title">{step.title}</h2>
+      <h2 className="step-title">
+        {step.id}. {step.title}
+      </h2>
 
       {step.questions.map((q) => (
         <div key={q.id} className="question-block">
@@ -47,7 +66,7 @@ export default function FormWizard() {
 
       <div className="navigation-buttons">
         {currentStep > 0 && <button onClick={prevStep}>Voltar</button>}
-        {currentStep < questionSteps.length - 1 ? (
+        {currentStep < steps.length - 1 ? (
           <button onClick={nextStep}>Avançar</button>
         ) : (
           <button onClick={() => console.log("Respostas:", respostas)}>
