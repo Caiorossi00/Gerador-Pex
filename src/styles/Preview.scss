@@ -1,17 +1,15 @@
 .preview {
-  max-width: 595px;
+  max-width: 480px;
   padding: 2rem;
   color: #000;
   border: 1px solid black;
-  max-height: 842px;
+  max-height: 600px;
   overflow: auto;
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0;
-  transform: scale(0.7);
   transform-origin: top right;
-  margin-left: -10vw;
 
   h2 {
     text-align: center;

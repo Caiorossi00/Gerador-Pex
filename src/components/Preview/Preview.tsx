@@ -18,7 +18,7 @@ type PreviewProps = {
 
 export default function Preview({ steps, respostas }: PreviewProps) {
   return (
-    <div className="preview">
+    <div className="preview" id="relatorio-pdf">
       <h2>Prévia do Relatório</h2>
 
       {steps.map((step) => (
