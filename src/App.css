@@ -1,11 +1,17 @@
-body {
+* {
   box-sizing: border-box;
+  font-family: "inter", sans-serif;
+  letter-spacing: -1.2px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .app-container {
-  background-color: red;
   display: flex;
-  justify-content: space-between;
-  width: 80vw;
+  justify-content: space-around;
   margin: 0 auto;
+  padding-top: 10vh;
 }

@@ -1,7 +1,7 @@
 export const questionSteps = [
   {
     id: 1,
-    title: "Do local da atividade",
+    title: "Do Local da atividade",
     questions: [
       { id: "1.1", label: "Qual a Instituição beneficiada?" },
       { id: "1.2", label: "O que ela faz?" },

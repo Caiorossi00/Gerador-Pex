@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../../styles/FormWizard.scss";
 
 type Question = {
   id: string;
@@ -50,19 +51,20 @@ export default function FormWizard({
         {step.id}. {step.title}
       </h2>
 
-      {step.questions.map((q) => (
-        <div key={q.id} className="question-block">
-          <label className="question-label">
-            {q.id} {q.label}
-          </label>
-          <input
-            type="text"
-            value={respostas[q.id] || ""}
-            onChange={(e) => handleChange(q.id, e.target.value)}
-            className="question-input"
-          />
-        </div>
-      ))}
+      <div className="step-questions">
+        {step.questions.map((q) => (
+          <div key={q.id} className="question-block">
+            <label className="question-label">
+              {q.id} {q.label}
+            </label>
+            <textarea
+              value={respostas[q.id] || ""}
+              onChange={(e) => handleChange(q.id, e.target.value)}
+              className="question-input"
+            />
+          </div>
+        ))}
+      </div>
 
       <div className="navigation-buttons">
         {currentStep > 0 && <button onClick={prevStep}>Voltar</button>}

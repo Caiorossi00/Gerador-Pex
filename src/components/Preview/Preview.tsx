@@ -1,3 +1,5 @@
+import "../../styles/Preview.scss";
+
 type Question = {
   id: string;
   label: string;
