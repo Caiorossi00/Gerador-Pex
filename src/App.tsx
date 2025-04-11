@@ -7,6 +7,8 @@ import "./App.css";
 import DownloadButton from "./components/DownloadButton/DownloadButton";
 // @ts-ignore
 import html2pdf from "html2pdf.js";
+import Hero from "./components/Hero/Hero";
+import Navbar from "./components/Hero/Navbar";
 
 function App() {
   const [respostas, setRespostas] = useState<{ [key: string]: string }>({});
@@ -36,21 +38,28 @@ function App() {
   };
 
   return (
-    <main className="app-container">
-      <FormWizard
-        steps={questionSteps}
-        respostas={respostas}
-        setRespostas={setRespostas}
-        handleDownload={handleDownload}
-      />
+    <>
+      <header>
+        <Navbar />
+        <Hero />
+      </header>
 
-      <div className="preview-container">
-        <div id="relatorio-pdf">
-          <Preview steps={questionSteps} respostas={respostas} />
+      <main className="app-container">
+        <FormWizard
+          steps={questionSteps}
+          respostas={respostas}
+          setRespostas={setRespostas}
+          handleDownload={handleDownload}
+        />
+
+        <div className="preview-container">
+          <div id="relatorio-pdf">
+            <Preview steps={questionSteps} respostas={respostas} />
+          </div>
+          <DownloadButton handleDownload={handleDownload} />
         </div>
-        <DownloadButton handleDownload={handleDownload} />
-      </div>
-    </main>
+      </main>
+    </>
   );
 }
 
