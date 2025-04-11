@@ -16,6 +16,7 @@
   flex-direction: column;
   gap: 1em;
   margin-top: 1em;
+  width: 90%;
 
   .question-block {
     display: flex;
@@ -26,7 +27,7 @@
       border: none;
       width: 70%;
       min-width: 380px;
-      max-width: 500px;
+      max-width: 450px;
       min-height: 60px;
       max-height: 400px;
       margin-top: 10px;

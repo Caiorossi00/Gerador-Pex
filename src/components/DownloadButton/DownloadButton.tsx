@@ -1,4 +1,3 @@
-// DownloadButton.ts
 import "../../styles/DownloadButton.scss";
 
 type DownloadButtonProps = {

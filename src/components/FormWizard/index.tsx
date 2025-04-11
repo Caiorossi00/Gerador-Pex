@@ -10,6 +10,7 @@ type Step = {
   id: string;
   title: string;
   questions: Question[];
+  isHeader?: boolean;
 };
 
 type FormWizardProps = {
@@ -50,14 +51,14 @@ export default function FormWizard({
   return (
     <div className="form-wizard">
       <h2 className="step-title">
-        {step.id}. {step.title}
+        {step.isHeader ? step.title : `${step.id}. ${step.title}`}
       </h2>
 
       <div className="step-questions">
         {step.questions.map((q) => (
           <div key={q.id} className="question-block">
             <label className="question-label">
-              {q.id} {q.label}
+              {step.isHeader ? q.label : `${q.id} ${q.label}`}
             </label>
             <textarea
               value={respostas[q.id] || ""}

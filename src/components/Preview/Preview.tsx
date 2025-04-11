@@ -9,6 +9,7 @@ type Step = {
   id: string;
   title: string;
   questions: Question[];
+  isHeader?: boolean;
 };
 
 type PreviewProps = {
@@ -19,29 +20,48 @@ type PreviewProps = {
 export default function Preview({ steps, respostas }: PreviewProps) {
   return (
     <div className="preview" id="relatorio-pdf">
-      <h2>Prévia do Relatório</h2>
+      {steps.map((step) => {
+        if (step.isHeader) {
+          return (
+            <div key={step.id} className="preview-header">
+              <h2>{step.title}</h2>
 
-      {steps.map((step) => (
-        <div key={step.id} className="preview-step">
-          <h3>
-            {step.id}. {step.title}
-          </h3>
+              <div className="preview-questions-header">
+                {step.questions.map((q) => (
+                  <p key={q.id}>
+                    <strong className="question-header">{q.label}</strong>
+                    <span className="answer-header">
+                      {respostas[q.id] || <em>Resposta pendente</em>}
+                    </span>
+                  </p>
+                ))}
+              </div>
+            </div>
+          );
+        }
 
-          <div className="preview-questions">
-            {step.questions.map((q) => (
-              <p key={q.id}>
-                <strong className="question">
-                  {q.id} {q.label}
-                </strong>
-                <br />
-                <span className="answer">
-                  {respostas[q.id] || <em>(Resposta pendente)</em>}
-                </span>
-              </p>
-            ))}
+        return (
+          <div key={step.id} className="preview-step">
+            <h3>
+              {step.id}. {step.title}
+            </h3>
+
+            <div className="preview-questions">
+              {step.questions.map((q) => (
+                <p key={q.id}>
+                  <strong className="question">
+                    {q.id} {q.label}
+                  </strong>
+                  <br />
+                  <span className="answer">
+                    {respostas[q.id] || <em>Resposta pendente</em>}
+                  </span>
+                </p>
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }

@@ -14,6 +14,7 @@ body {
   margin: 0 auto;
   padding-top: 10vh;
   justify-content: center;
+  gap: 2em;
 }
 
 .preview-container {

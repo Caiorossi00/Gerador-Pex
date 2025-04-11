@@ -15,6 +15,8 @@ function App() {
     const element = document.getElementById("relatorio-pdf");
 
     if (element) {
+      element.classList.add("print-mode");
+
       const opt = {
         margin: 0.5,
         filename: "relatorio.pdf",
@@ -23,7 +25,13 @@ function App() {
         jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
       };
 
-      html2pdf().set(opt).from(element).save();
+      html2pdf()
+        .set(opt)
+        .from(element)
+        .save()
+        .then(() => {
+          element.classList.remove("print-mode");
+        });
     }
   };
 
