@@ -49,7 +49,7 @@ export default function FormWizard({
   };
 
   return (
-    <div className="form-wizard">
+    <div className="form-wizard" id="form">
       <h2 className="step-title">
         {step.isHeader ? step.title : `${step.id}. ${step.title}`}
       </h2>

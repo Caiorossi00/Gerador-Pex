@@ -4,6 +4,10 @@
   letter-spacing: -1.2px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,6 +19,7 @@ body {
   padding-top: 10vh;
   justify-content: center;
   gap: 2em;
+  margin-bottom: 10vh;
 }
 
 .preview-container {
