@@ -1,36 +1,17 @@
-@keyframes pulse {
-  0%,
-  100% {
-    box-shadow: 0 0 20px rgba(0, 217, 166, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 40px rgba(0, 217, 166, 0.7);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .hero {
-  min-height: 92vh;
+  min-height: 80vh;
   display: flex;
   justify-content: space-around;
   font-family: "inter", sans-serif;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
+  align-items: center;
 
   .hero-left {
     display: flex;
     flex-direction: column;
     width: 40vw;
     height: fit-content;
-    margin-top: 20vh;
 
     h1 {
       font-size: 36px;
@@ -39,7 +20,7 @@
     }
 
     h2 {
-      font-size: 32px;
+      font-size: 30px;
       color: #00d9a6;
       font-weight: 700;
       letter-spacing: -2px;
@@ -48,23 +29,18 @@
     }
 
     p {
-      width: 80%;
+      width: 95%;
       font-size: 20px;
     }
   }
   .hero-right {
-    margin-top: 12vh;
-
     img {
       width: 350px;
       height: 350px;
       border-radius: 50%;
-      border: 8px dashed #d1d1d1;
-      padding: 10px;
       background-color: white;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
-      animation: pulse 3s ease-in-out infinite, rotate 80s linear infinite;
 
       &:hover {
         transform: scale(1.1);
