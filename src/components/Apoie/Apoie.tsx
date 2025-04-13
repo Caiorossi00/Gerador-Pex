@@ -1,7 +1,19 @@
+import { useState } from "react";
 import "../../styles/Apoio.scss";
 import logo from "../../assets/1.png";
+import qrPix from "../../assets/qrPix.jpg";
 
 const Apoie = () => {
+  const [copiado, setCopiado] = useState(false);
+
+  const handleCopyPix = () => {
+    navigator.clipboard.writeText("53984158694");
+    setCopiado(true);
+    setTimeout(() => {
+      setCopiado(false);
+    }, 2000);
+  };
+
   return (
     <div id="apoie">
       <div className="apoio-header">
@@ -28,20 +40,30 @@ const Apoie = () => {
         <div className="apoio-box">
           <div className="apoio-box-left">
             <h1>Você pode me apoiar me seguindo no Instagram!</h1>
-            <button className="btn-seguir">Seguir</button>
+            <a
+              className="btn-seguir"
+              href="https://instagram.com/caiorossi.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Seguir
+            </a>
           </div>
           <div className="apoio-box-right">
             <img src={logo} />
           </div>
         </div>
+
         <div className="apoio-box">
           <div className="apoio-box-left">
             <h1>Você pode me apoiar financeiramente!</h1>
             <p className="chave-pix">Chave pix: 53984158694</p>
-            <button className="btn-doar">Copiar a chave PIX</button>
+            <button className="btn-doar" onClick={handleCopyPix}>
+              {copiado ? "Chave copiada!" : "Copiar a chave PIX"}
+            </button>
           </div>
           <div className="apoio-box-right">
-            <img src="https://plus.unsplash.com/premium_photo-1668650610258-043278428a93?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            <img src={qrPix} />
           </div>
         </div>
       </div>
