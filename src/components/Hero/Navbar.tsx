@@ -5,10 +5,13 @@ export default function Navbar() {
     <nav className="navbar">
       <ul className="nav-links">
         <li>
-          <a href="#">Quem sou eu?</a>
+          <a href="#form">Gerar PEX</a>
         </li>
         <li>
-          <a href="#">Apoie o projeto</a>
+          <a href="#faq">FAQ</a>
+        </li>
+        <li>
+          <a href="#apoio">Apoie o projeto</a>
         </li>
         <li>
           <button>

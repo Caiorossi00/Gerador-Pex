@@ -64,7 +64,7 @@ function App() {
           </div>
         </div>
 
-        <div>
+        <div className="app-misc">
           <Faq />
           <Apoie />
           <Footer />

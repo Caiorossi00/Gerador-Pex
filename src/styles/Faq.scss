@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10vh;
+  gap: 8vh;
 }
 
 .faq-header {
@@ -55,5 +55,106 @@
   hr {
     color: #919191;
     height: 2px;
+  }
+}
+
+.faq-pending {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: #eceff0;
+  align-items: center;
+  text-align: center;
+  padding: 4em 0;
+  gap: 5vh;
+
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    width: 450px;
+    margin: 0 auto;
+    color: #585859;
+    font-style: italic;
+    font-size: large;
+    font-weight: 200;
+  }
+}
+
+.faq-socials {
+  display: flex;
+  gap: 2em;
+
+  a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+    i {
+      font-size: 24px;
+      transition: all 0.3s ease;
+    }
+
+    &:nth-child(1) {
+      i {
+        color: #0077b5;
+      }
+
+      &:hover {
+        background-color: #0077b5;
+
+        i {
+          color: white;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      i {
+        background: linear-gradient(
+          45deg,
+          #f09433 0%,
+          #e6683c 25%,
+          #dc2743 50%,
+          #cc2366 75%,
+          #bc1888 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      &:hover {
+        background-color: #f5f5f5;
+
+        i {
+          filter: brightness(0.8);
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      i {
+        color: #25d366;
+      }
+
+      &:hover {
+        background-color: #25d366;
+
+        i {
+          color: white;
+        }
+      }
+    }
   }
 }

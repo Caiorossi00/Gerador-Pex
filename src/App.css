@@ -28,3 +28,9 @@ main {
   margin-bottom: 10vh;
   margin-top: 10vh;
 }
+
+.app-misc {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+}
