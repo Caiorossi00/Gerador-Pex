@@ -23,11 +23,19 @@ function App() {
       element.classList.add("print-mode");
 
       const opt = {
-        margin: 0.5,
+        margin: 0.3,
         filename: "relatorio.pdf",
         image: { type: "jpeg", quality: 0.98 },
         html2canvas: { scale: 2 },
-        jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
+        autoPaging: "text",
+        jsPDF: {
+          unit: "in",
+          format: "a4",
+          orientation: "portrait",
+          autoFirstPage: true,
+          pageSize: "A4",
+          hotfixes: ["px_scaling"],
+        },
       };
 
       html2pdf()
