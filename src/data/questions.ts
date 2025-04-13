@@ -48,7 +48,7 @@ export const questionSteps = [
     questions: [
       {
         id: "4.1",
-        label: "Insira as evidências da conclusão do projeto",
+        label: "Evidências:",
       },
     ],
   },

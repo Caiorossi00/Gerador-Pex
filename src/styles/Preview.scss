@@ -3,7 +3,7 @@
   padding: 2rem;
   border: 1px solid #b1b1b1;
   border-radius: 4px;
-  max-height: 600px;
+  max-height: 650px;
   overflow: auto;
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -17,6 +17,7 @@
     text-align: center;
     font-size: 18px;
     font-weight: bold;
+    letter-spacing: 0;
   }
 
   .preview-step {
@@ -25,10 +26,12 @@
     h3 {
       font-weight: bold;
       font-size: 20px;
+      letter-spacing: 0;
     }
 
     p {
       margin-top: 5px;
+      letter-spacing: 0;
     }
   }
 }
@@ -40,6 +43,7 @@
 
   .question {
     font-style: italic;
+    letter-spacing: 0;
   }
 
   .answer {
@@ -51,10 +55,12 @@
     word-break: break-word;
     overflow-wrap: break-word;
     white-space: normal;
+    letter-spacing: 0;
 
     em {
       color: #00b58f;
       font-style: normal;
+      letter-spacing: 0;
     }
   }
 }
@@ -74,15 +80,18 @@
 
   h2 {
     margin-bottom: 0.5em;
+    letter-spacing: 0;
   }
 
   em {
     color: #00b58f;
+    letter-spacing: 0;
   }
 
   em,
   span {
     margin-left: 0.2em;
+    letter-spacing: 0;
   }
 }
 
