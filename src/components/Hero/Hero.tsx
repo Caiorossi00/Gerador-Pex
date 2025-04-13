@@ -4,7 +4,7 @@ import auxilioPex from "../../assets/Auxilio-pex-Caiorossidev.pdf";
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero-left">
         <h1>Gerador de Pex</h1>
         <h2>Desenvolvido por @CaioRossi.dev</h2>
