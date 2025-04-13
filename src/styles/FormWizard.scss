@@ -4,6 +4,7 @@
   height: fit-content;
   display: flex;
   flex-direction: column;
+  margin-top: 2vh;
 
   h2 {
     font-size: 1.5em;
@@ -23,7 +24,7 @@
     flex-direction: column;
 
     textarea {
-      background-color: #ededed;
+      background-color: #ffffff;
       border: none;
       width: 70%;
       min-width: 380px;
