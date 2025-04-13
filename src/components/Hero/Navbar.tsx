@@ -11,7 +11,7 @@ export default function Navbar() {
           <a href="#faq">FAQ</a>
         </li>
         <li>
-          <a href="#apoio">Apoie o projeto</a>
+          <a href="#apoie">Apoie o projeto</a>
         </li>
         <li>
           <button>
