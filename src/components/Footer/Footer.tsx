@@ -33,15 +33,12 @@ const Footer = () => {
             >
               Instagram
             </a>
-            <hr />
           </li>
           <li>
             <a href="https://www.linkedin.com/in/caio-rossi-dev/">LinkedIn</a>
-            <hr />
           </li>
           <li>
             <a href="https://github.com/Caiorossi00">Github</a>
-            <hr />
           </li>
         </ul>
       </div>

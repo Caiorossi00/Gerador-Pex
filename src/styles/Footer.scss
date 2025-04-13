@@ -37,14 +37,6 @@
             color: #888;
           }
         }
-
-        hr {
-          margin-top: 5px;
-          width: 250px;
-          height: 1px;
-          background-color: #444;
-          border: none;
-        }
       }
     }
   }
@@ -54,14 +46,11 @@
   }
 
   .socials-footer {
+    width: 300px;
     ul {
       li {
         a {
           font-size: 14px;
-        }
-
-        hr {
-          margin-top: 5px;
         }
       }
     }
