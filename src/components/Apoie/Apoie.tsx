@@ -29,10 +29,10 @@ const Apoie = () => {
 
       <div className="apoio-resultados">
         <h3>
-          <span>+2 </span>Novos Seguidores
+          <span>+7 </span>Novos Seguidores
         </h3>
         <h3>
-          <span>+2 </span>Doadores
+          <span>+3 </span>Doadores
         </h3>
       </div>
 
