@@ -100,30 +100,15 @@
   border: none !important;
   width: 100% !important;
   padding: 2rem !important;
+
+  h3 {
+    font-size: 1.3em;
+  }
+  .answer {
+    font-size: 1.2em;
+  }
 }
 
 .print-mode .preview-header {
   border: none !important;
-}
-
-@media print {
-  .preview {
-    max-width: none !important;
-    max-height: none !important;
-    overflow: visible !important;
-    border: none !important;
-    width: 100% !important;
-    padding: 2rem !important;
-    page-break-before: auto !important;
-  }
-
-  .preview-step {
-    page-break-before: always;
-    page-break-inside: avoid;
-  }
-
-  .preview-header {
-    page-break-before: always;
-    border: none !important;
-  }
 }

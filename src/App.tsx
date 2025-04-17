@@ -25,7 +25,7 @@ function App() {
       const opt = {
         margin: 0.3,
         filename: "relatorio.pdf",
-        image: { type: "jpeg", quality: 0.98 },
+        image: { type: "jpeg", quality: 0.7 },
         html2canvas: { scale: 2 },
         autoPaging: "text",
         jsPDF: {
