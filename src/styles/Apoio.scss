@@ -178,3 +178,86 @@
     }
   }
 }
+@media (max-width: 768px) {
+  #apoie .apoio-header {
+    h1 {
+      font-size: 36px;
+      width: 90%;
+    }
+
+    p {
+      width: 90%;
+      font-size: 18px;
+    }
+  }
+
+  .apoio-resultados {
+    width: 90%;
+    padding-right: 0;
+    align-items: center;
+  }
+
+  .apoio-box-container .apoio-box {
+    width: 90%; // Adicionei esta linha para substituir os 800px fixos
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+
+    .apoio-box-left {
+      align-items: center;
+
+      h1 {
+        font-size: 2em;
+        width: 100%;
+      }
+
+      button,
+      .btn-seguir {
+        width: 100%;
+        max-width: 250px;
+      }
+    }
+
+    .apoio-box-right img {
+      width: 180px;
+      height: 180px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #apoie .apoio-header {
+    gap: 10px;
+    h1 {
+      font-size: 34px;
+      letter-spacing: -2px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .apoio-resultados {
+    margin: 0;
+  }
+
+  .apoio-resultados h3 {
+    font-size: 1.5em;
+  }
+
+  .apoio-box-container .apoio-box {
+    width: 95%;
+    padding: 2em 0;
+
+    .apoio-box-left h1 {
+      font-size: 1.5em;
+      letter-spacing: -1px;
+    }
+
+    .apoio-box-right img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
