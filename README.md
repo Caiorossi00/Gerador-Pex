@@ -1,6 +1,6 @@
 <h1>Gerador de PEX</h1>
 
-<p>Essa é uma ferramenta desenvolvida gentilmente por um aluno, para alunos. Não tenho nenhuma ligação direta com a Descomplica.<br/>O aplicativo permite que os usuários preencham um formulário interativo, visualizem uma pré-visualização do seu relatório e, em seguida, façam o download do relatório em formato PDF.</p>
+<p>O aplicativo permite que os usuários preencham um formulário interativo, visualizem uma pré-visualização do seu relatório e, em seguida, façam o download do relatório em formato PDF.<br />Essa é uma ferramenta desenvolvida gentilmente por um aluno, para alunos. Não tenho nenhuma ligação direta com a Descomplica.</p>
 
 <h2>Funcionalidades</h2>
 <ul>
