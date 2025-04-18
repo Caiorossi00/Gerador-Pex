@@ -20,7 +20,9 @@ export default function Hero() {
         <p className="hero-info">
           Gere o seu relatório de projeto de extensão com facilidade, em um
           projeto feito por um aluno, para alunos.<br></br>
-          Clique no botão abaixo e monte o seu relatório em poucos minutos.
+          <span>
+            Clique no botão abaixo e monte o seu relatório em poucos minutos.
+          </span>
         </p>
         <div className="hero-buttons">
           <button className="primary">
