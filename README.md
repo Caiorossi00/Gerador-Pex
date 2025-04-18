@@ -27,3 +27,12 @@
   </li>
 </ul>
 
+<h2>Entrar em Contato Comigo</h2>
+<p>Se você tiver alguma dúvida, sugestão ou quiser conversar sobre o projeto, fique à vontade para entrar em contato comigo.</p>
+<ul>
+  <li><a href="https://wa.me/5553984158694" target="_blank">Whatsapp</a></li>
+  <li><a href="https://www.linkedin.com/in/caio-rossi-dev/" target="_blank">LinkedIn</a></li>
+  <li><a href="https://www.instagram.com/caiorossi.dev" target="_blank">Instagram</a></li>
+</ul>
+
+
