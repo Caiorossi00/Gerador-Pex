@@ -117,3 +117,10 @@
 .print-mode .preview-header {
   border: none !important;
 }
+
+@media (max-width: 768px) {
+  .preview {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

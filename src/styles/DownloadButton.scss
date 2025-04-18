@@ -13,3 +13,10 @@
     color: white;
   }
 }
+
+@media (max-width: 768px) {
+  .download-button {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
