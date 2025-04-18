@@ -19,11 +19,14 @@ const Apoie = () => {
       <div className="apoio-header">
         <h1>Gostou da ideia e quer me ajudar?</h1>
         <p>
-          Apoiar boas ideias é como jogar sementes ao vento.<br></br> Quando
-          você incentiva projetos feitos com dedicação e boas intenções, está
-          ajudando a espalhar mais soluções positivas no mundo.<br></br> Cada
-          gesto de apoio mostra que vale a pena acreditar, criar e agir com
-          propósito. <br></br>Que este espaço te inspire a agir também.
+          Apoiar boas ideias é como jogar sementes ao vento.
+          <br />
+          Quando você incentiva projetos feitos com dedicação e boas intenções,
+          está ajudando a espalhar mais soluções positivas no mundo.
+          <br />
+          Cada gesto de apoio mostra que vale a pena acreditar, criar e agir com
+          propósito. <br />
+          Que este espaço te inspire a agir também.
         </p>
       </div>
 
@@ -45,12 +48,13 @@ const Apoie = () => {
               href="https://instagram.com/caiorossi.dev"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Seguir no Instagram"
             >
               Seguir
             </a>
           </div>
           <div className="apoio-box-right">
-            <img src={logo} />
+            <img src={logo} alt="Logo de Caio Rossi Dev" />
           </div>
         </div>
 
@@ -63,7 +67,7 @@ const Apoie = () => {
             </button>
           </div>
           <div className="apoio-box-right">
-            <img src={qrPix} />
+            <img src={qrPix} alt="QR Code para doação via Pix" />
           </div>
         </div>
       </div>

@@ -31,15 +31,33 @@ const Footer = () => {
                 href="https://instagram.com/caiorossi.dev"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Visitar o Instagram de Caio Rossi"
+                aria-label="Instagram de Caio Rossi"
               >
                 Instagram
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/caio-rossi-dev/">LinkedIn</a>
+              <a
+                href="https://www.linkedin.com/in/caio-rossi-dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Visitar o LinkedIn de Caio Rossi"
+                aria-label="LinkedIn de Caio Rossi"
+              >
+                LinkedIn
+              </a>
             </li>
             <li>
-              <a href="https://github.com/Caiorossi00">Github</a>
+              <a
+                href="https://github.com/Caiorossi00"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Visitar o GitHub de Caio Rossi"
+                aria-label="GitHub de Caio Rossi"
+              >
+                Github
+              </a>
             </li>
           </ul>
         </div>

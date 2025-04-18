@@ -57,10 +57,11 @@ export default function FormWizard({
       <div className="step-questions">
         {step.questions.map((q) => (
           <div key={q.id} className="question-block">
-            <label className="question-label">
+            <label className="question-label" htmlFor={`textarea-${q.id}`}>
               {step.isHeader ? q.label : `${q.id} ${q.label}`}
             </label>
             <textarea
+              id={`textarea-${q.id}`}
               value={respostas[q.id] || ""}
               onChange={(e) => handleChange(q.id, e.target.value)}
               className="question-input"
