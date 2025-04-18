@@ -104,17 +104,17 @@
     }
 
     .socials-footer ul {
-      display: flex;
-      flex-wrap: wrap;
       gap: 15px;
+      margin-top: -5px;
 
       li {
-        margin-bottom: 0;
+        margin-bottom: 5px;
       }
     }
 
     .footer-credits {
       padding-top: 15px;
+
       p {
         font-size: 12px;
       }
