@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../../styles/Apoio.scss";
 import logo from "../../assets/1.png";
-import qrPix from "../../assets/qrPix.jpg";
+import qrPix from "../../assets/qrPix.png";
 
 const Apoie = () => {
   const [copiado, setCopiado] = useState(false);
