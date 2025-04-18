@@ -1,7 +1,7 @@
 export const questionSteps = [
   {
     id: 0,
-    title: "Projeto de extensão - Descomplica 2025",
+    title: "Projeto de extensão Descomplica 2025",
     isHeader: true,
     questions: [
       { id: "0.1", label: "Email:" },
