@@ -72,8 +72,8 @@
   .form-wizard {
     max-width: 100%;
     min-width: unset;
-    padding: 0 15px;
     align-items: center;
+    margin-top: -3vh;
 
     h2 {
       font-size: 1.6em;
@@ -103,7 +103,6 @@
 
     button {
       width: 100%;
-      min-width: 70vw;
     }
   }
 }
