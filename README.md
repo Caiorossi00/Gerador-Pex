@@ -35,4 +35,4 @@
   <li><a href="https://www.instagram.com/caiorossi.dev" target="_blank">Instagram</a></li>
 </ul>
 
-
+Link do aplicarivo: <a href="https://geradordepex.vercel.app/" target="_blank">Gerador de Pex</a>
