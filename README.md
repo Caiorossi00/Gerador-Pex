@@ -22,9 +22,6 @@
   <li><strong>Dê uma Estrelinha no GitHub:</strong> Se esse projeto foi útil para você, dê uma estrelinha no repositório para ajudar mais pessoas a encontrá-lo.
     <br/><a href="https://github.com/Caiorossi00/Gerador-Pex" target="_blank">GitHub - Gerador Pex</a>
   </li>
-  <li><strong>Apoie com uma contribuição financeira:</strong> Caso queira apoiar financeiramente o projeto ou simplesmente me agradecer por esse material, você pode fazer uma contribuição via Pix.
-    <br/><strong>Pix:</strong> 53984158694
-  </li>
 </ul>
 
 <h2>Entrar em Contato Comigo</h2>
